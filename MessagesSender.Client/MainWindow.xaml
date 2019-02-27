@@ -1,0 +1,19 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MessagesSender.Client"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" x:Class="MessagesSender.Client.MainWindow"
+        mc:Ignorable="d"
+        Title="Client" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lblStatus" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.474,0.385"/>
+        <Label x:Name="lbl" Content="Отправленные сообщения:" HorizontalAlignment="Left" Margin="12,120,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtMessages" HorizontalAlignment="Left" Margin="10,147,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="262" Width="772"/>
+        <Label x:Name="lblInput" Content="Введите сообщение:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="124"/>
+        <dx:SimpleButton x:Name="btnSend" Content="Отправить сообщение" HorizontalAlignment="Left" Margin="12,95,0,0" VerticalAlignment="Top" Width="150" Click="BtnSend_Click"/>
+        <dx:SimpleButton x:Name="btnConnect" Content="Подключиться к серверу" HorizontalAlignment="Left" Height="20" Margin="167,95,0,0" VerticalAlignment="Top" Width="165" Click="BtnConnect_Click" RenderTransformOrigin="0.5,0.5"/>
+        <dxe:TextEdit x:Name="txtInput" HorizontalAlignment="Left" Margin="12,68,0,0" VerticalAlignment="Top" Width="770"/>
+    </Grid>
+</Window>
